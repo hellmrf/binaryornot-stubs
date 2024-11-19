@@ -1,0 +1,21 @@
+[project]
+name = "binaryornot-stubs"
+version = "1.0.0"
+description = "Stubs (typing) for binaryornot package."
+readme = "README.md"
+authors = [
+    { name = "Heliton Martins", email = "helitonmrf@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "binaryornot>=0.4.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.13.0",
+]
